@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JInternalFrame;
 import javax.swing.SwingUtilities;
 
-public class Panel extends JPanel {
+public class InternalPanel extends JPanel {
 
     Panel2 panelSecundario = new Panel2();
 
@@ -26,7 +26,7 @@ public class Panel extends JPanel {
     JLabel leftLabel = new JLabel("Left Label");
     JLabel rightLabel = new JLabel();
 
-    public Panel() {
+    public InternalPanel() {
         this.setBorder(null);
         this.setOpaque(true);
         this.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -42,7 +42,7 @@ public class Panel extends JPanel {
         leftLabel.setForeground(Color.WHITE); // Color del texto para que sea visible
         leftLabel.setText("TITULO");
         leftLabel.setFont(new Font("Tahoma", Font.BOLD, 30));
-        rightLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/componente/Cerrar32.png")));
+        rightLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Cerrar32.png")));
 
         // Añadir los JLabel al panel principal
         add(leftLabel);
@@ -54,7 +54,7 @@ public class Panel extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 if (SwingUtilities.isLeftMouseButton(e)) {
                     // Obtener el JInternalFrame padre y cerrarlo
-                    JInternalFrame internalFrame = (JInternalFrame) SwingUtilities.getAncestorOfClass(JInternalFrame.class, Panel.this);
+                    JInternalFrame internalFrame = (JInternalFrame) SwingUtilities.getAncestorOfClass(JInternalFrame.class, InternalPanel.this);
                     if (internalFrame != null) {
                         internalFrame.dispose();
                     }

@@ -27,7 +27,7 @@ public class Internal extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panel2 = new Components.Panel();
+        panel2 = new Components.InternalPanel();
 
         setBackground(new java.awt.Color(242, 242, 242));
         setBorder(null);
@@ -49,6 +49,6 @@ public class Internal extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private Components.Panel panel2;
+    private Components.InternalPanel panel2;
     // End of variables declaration//GEN-END:variables
 }

@@ -40,7 +40,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="Components.Panel" name="panel2">
+    <Component class="Components.InternalPanel" name="panel2">
     </Component>
   </SubComponents>
 </Form>
